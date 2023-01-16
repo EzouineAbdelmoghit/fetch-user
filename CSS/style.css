@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e8e8e8;
+}
+main{
+    width: 80%;
+    height: 80vh;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+}
+.input-box{
+    text-align: center;
+}
+.input-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black ;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background-color: #e8e8e8;
+}
+button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+  }
+  
+  /* span {
+    display: inline-block;
+    transform: skew(21deg);
+  } */
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: #fff;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+.box div{
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+.box div h3{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    letter-spacing: 0.75px;
+    color: #333;
+}
+.box div h3 span{
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+}
